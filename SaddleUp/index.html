@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaddleUp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div id="app"></div>
+    <div id="temporaryContent">
+        <div class="banner"></div>
+           <div class="banner-head">
+            <h1>Let us Connect you with<br> your Desired Horse</h1>
+        </div>
+        <div class="filer">
+            <h3>Find your Horse</h3>
+
+              <form action="" class="searchbar">
+                <div class="inputsRow">
+                    <div class="inputs">
+                        <div class="inputwrapper">
+                            <select id="age">
+                                <option selected="selected">Age Group</option>
+                                <option value="0">Foal</option>
+                                <option value="1">Young Horses</option>
+                                <option value="2">Adults</option>
+                            </select>
+                        </div>
+    
+                        <div class="inputwrapper" data-type="discipline">
+                            <select id="suitability">
+                                <option selected="selected">Discipline</option>
+                                <option value="0">Dressage</option>
+                                <option value="1">Show Jumping</option>
+                                <option value="2">Hunter/Jumper</option>
+                                <option value="3">Eventing</option>
+                                <option value="4">Pleasure</option>
+                            </select>
+                        </div>
+    
+                        <div class="inputwrapper" data-type="race">
+                            <select id="breed">
+                                <option selected="selected">Breed</option>
+                                <option value="0">Arabian</option>
+                                <option value="1">Apaloosa</option>
+                                <option value="2">Warmblood</option>
+                                <option value="3">Friesian</option>
+                                <option value="4">Pony</option>
+                                <option value="5">Aegidienberger</option>
+                                <option value="5">Filly</option>
+                            </select>
+                        </div>
+    
+                        <div class="inputwrapper" data-type="colour">
+                            <select id="colour">
+                                <option selected="selected">Colours</option>
+                                <option value="0">Brown</option>
+                                <option value="1">Chestnut</option>
+                                <option value="2">Black</option>
+                                <option value="3">Gray</option>
+                                <option value="4">Pinto</option>
+                            </select>
+                        </div>
+    
+                        
+                            <div class="inputwrapper location" data-type="location">
+                                <div>
+                                    <select id="country" data-default="27">
+                                        <option value="0" selected="selected">Location</option>
+                                        
+                                                <option value="32" data-country="Albania" data-iso="AL">Albania</option>
+                                        
+                                                <option value="34" data-country="Algeria" data-iso="DZ">Algeria</option>
+                                        
+                                                <option value="40" data-country="Argentina" data-iso="AR">Argentina</option>
+                                        
+                                                <option value="35" data-country="Australia" data-iso="AU">Australia</option>
+                                        
+                                                <option value="16" data-country="Austria" data-iso="AT">Austria</option>
+                                        
+                                                <option value="54" data-country="Belarus" data-iso="BY">Belarus</option>
+                                        
+                                                <option value="1" data-country="Belgium" data-iso="BE">Belgium</option>
+                                        
+                                                <option value="59" data-country="Bosnia and Herzegovina" data-iso="BA">Bosnia and Herzegovina</option>
+                                        
+                                                <option value="44" data-country="Brazil" data-iso="BR">Brazil</option>
+                                        
+                                                <option value="2" data-country="Bulgaria" data-iso="BG">Bulgaria</option>
+                                        
+                                                <option value="11" data-country="Canada" data-iso="CA">Canada</option>
+                                        
+                                                <option value="38" data-country="China" data-iso="CN">China</option>
+                                        
+                                                <option value="53" data-country="Colombia" data-iso="CO">Colombia</option>
+                                        
+                                                <option value="43" data-country="Croatia" data-iso="HR">Croatia</option>
+                                        
+                                                <option value="55" data-country="Cyprus" data-iso="CY">Cyprus</option>
+                                        
+                                                <option value="25" data-country="Czech Republic" data-iso="CZ">Czech Republic</option>
+                                        
+                                                <option value="3" data-country="Denmark" data-iso="DK">Denmark</option>
+                                        
+                                                <option value="31" data-country="Egypt" data-iso="EG">Egypt</option>
+                                        
+                                                <option value="39" data-country="Estonia" data-iso="EE">Estonia</option>
+                                        
+                                                <option value="41" data-country="Finland" data-iso="FI">Finland</option>
+                                        
+                                                <option value="5" data-country="France" data-iso="FR">France</option>
+                                        
+                                                <option value="4" data-country="Germany" data-iso="DE">Germany</option>
+                                        
+                                                <option value="6" data-country="Greece" data-iso="GR">Greece</option>
+                                        
+                                                <option value="28" data-country="Hungary" data-iso="HU">Hungary</option>
+                                        
+                                                <option value="9" data-country="Iceland" data-iso="IS">Iceland</option>
+                                        
+                                                <option value="8" data-country="Ireland" data-iso="IE">Ireland</option>
+                                        
+                                                <option value="10" data-country="Italy" data-iso="IT">Italy</option>
+                                        
+                                                <option value="42" data-country="Japan" data-iso="JP">Japan</option>
+                                        
+                                                <option value="51" data-country="Latvia" data-iso="LV">Latvia</option>
+                                        
+                                                <option value="58" data-country="Liechtenstein" data-iso="LI">Liechtenstein</option>
+                                        
+                                                <option value="45" data-country="Lithuania" data-iso="LT">Lithuania</option>
+                                        
+                                                <option value="12" data-country="Luxembourg" data-iso="LU">Luxembourg</option>
+                                        
+                                                <option value="56" data-country="Malta" data-iso="MT">Malta</option>
+                                        
+                                                <option value="37" data-country="Mexico" data-iso="MX">Mexico</option>
+                                        
+                                                <option value="46" data-country="Morocco" data-iso="MA">Morocco</option>
+                                        
+                                                <option value="57" data-country="Namibia" data-iso="NA">Namibia</option>
+                                        
+                                                <option value="13" data-country="Netherlands" data-iso="NL">Netherlands</option>
+                                        
+                                                <option value="36" data-country="New Zealand" data-iso="NZ">New Zealand</option>
+                                        
+                                                <option value="14" data-country="Norway" data-iso="NO">Norway</option>
+                                        
+                                                <option value="15" data-country="Oman" data-iso="OM">Oman</option>
+                                        
+                                                <option value="17" data-country="Poland" data-iso="PL">Poland</option>
+                                        
+                                                <option value="18" data-country="Portugal" data-iso="PT">Portugal</option>
+                                        
+                                                <option value="19" data-country="Romania" data-iso="RO">Romania</option>
+                                        
+                                                <option value="20" data-country="Russia" data-iso="RU">Russia</option>
+                                        
+                                                <option value="21" data-country="Saudi Arabia" data-iso="SA">Saudi Arabia</option>
+                                        
+                                                <option value="48" data-country="Serbia" data-iso="RS">Serbia</option>
+                                        
+                                                <option value="50" data-country="Slovakia" data-iso="SK">Slovakia</option>
+                                        
+                                                <option value="30" data-country="Slovenia" data-iso="SI">Slovenia</option>
+                                        
+                                                <option value="24" data-country="Spain" data-iso="ES">Spain</option>
+                                        
+                                                <option value="22" data-country="Sweden" data-iso="SE">Sweden</option>
+                                        
+                                                <option value="23" data-country="Switzerland" data-iso="CH">Switzerland</option>
+                                        
+                                                <option value="33" data-country="Tunisia" data-iso="TN">Tunisia</option>
+                                        
+                                                <option value="26" data-country="Turkey" data-iso="TR">Turkey</option>
+                                        
+                                                <option value="29" data-country="U.A.E" data-iso="AE">U.A.E</option>
+                                        
+                                                <option value="47" data-country="Ukraine" data-iso="UA">Ukraine</option>
+                                        
+                                                <option value="7" data-country="United Kingdom" data-iso="GB">United Kingdom</option>
+                                        
+                                                <option value="27" data-country="United States" data-iso="US">United States</option>
+                                        
+                                    </select>
+                                </div>
+                            </div>
+                            
+                        <div class="inputwrapper" data-type="sex">
+                            <select id="sex">
+                                <option selected="selected">Gender</option>
+                                <option value="0">Stallion</option>
+                                <option value="1">Mare</option>
+                                <option value="2">Gelding</option>
+                                <option value="3">Filly</option>
+                            </select>
+                        </div>
+                    </div>
+              </form>
+                
+                <button class="btn-search">Search Horses</button>
+        </div>
+    </div>
+    
+        
+
+        
+    </div>
+
+   <div class="list-bar">
+     <h3>New additions</h3>
+</div class="list-container">
+<div class="listProduct"></div>
+</div>
+   </div>
+
+       
+    <div class="content">
+        <h1>Be the Next Horse Owner</h1>
+
+        <div class="get">
+            <h2>Get in Touch</h2>
+
+            <div class="email">
+                <input type="text" id="email " placeholder="Input email address">
+                <img src="./images/Vector (9).svg" alt="">
+            </div>
+        </div>
+    </div>
+   
+    <footer>
+        <div class="footer-content">
+            <h4 class="logo">SaddleUpSales</h4>
+            
+            <article>
+                <h4>Let’s make you the next Horse Owner</h4>
+                <p>Check our catalogue of horses and select your choice</p>
+            </article>
+        </div>
+
+        <div class="about">
+            <ul>
+                <li>About us</li>
+                <li>Privacy</li>
+                <li>Terms of use</li>
+                <li>Refund Policy</li>
+            </ul>
+            
+            <div class="socials">
+                <img src="./images/Vector (8).svg" alt="" class="facebook">
+                <img src="./images/Vector (10).svg" alt="">
+                <img src="./images/Vector (7).svg" alt="">
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>

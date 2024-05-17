@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaddleUp-Checkout</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div id="app"></div>
+    <div id="temporaryContent">
+        <div class="checkout-pro">
+            <div class="order-tab">
+                <h4>Order Summary</h4>
+                <div class="order" id="order"></div>
+            </div>
+
+            <div class="payment">
+                <div class="contact" id="contact">
+                    <div class="info">
+                      <h4>Contact Information</h4>
+                      <p>Input Email Address for Order Status Updates</p>
+
+                      <input type="email" placeholder="Enter Email Address" id="emailInput">
+                      <p>Get exclusive deals and product updates delivered straight to your inbox. Unsubscribe anytime</p>
+                    </div>
+
+                    <div class="continue">
+                        <p>By clicking 'Continue to payment', you agree to our Terms & Conditions and Privacy Policy</p>
+                        <button class="btn-payment" id="paymentButton">Continue to Payment</button>
+                    </div>
+                </div>
+
+                <div id="payment-container">
+                    <div class="crypto-currencies" id="cryptocurrencies">
+                        <article>
+                           <h4>Select Payment Method</h4>
+                           <p>Select Prefered Payment Method</p>
+                        </article>
+   
+                        <ul class="crypto-list" id="crypto-list">
+                           <li><img src="./images/bitcoin_icon.svg" alt="">Bitcoin</li>
+                           <li><img src="./images/lightning_icon.svg" alt="">Lightning</li>
+                           <li><img src="./images/ethereum_icon.svg" alt="">Ethereum</li>
+                           <li><img src="./images/usdc_icon.svg" alt="">USDC</li>
+                           <li><img src="./images/tether_icon.svg" alt="">Tether</li>
+                           <li><img src="./images/ltc_icon.svg" alt="">LTC</li>
+                           <li><img src="./images/doge_icon.svg" alt="">Doge</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+        
+    <script type="module" src="checkout.js"></script>
+</body>
+  
+</html>
